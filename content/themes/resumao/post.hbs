@@ -1,0 +1,62 @@
+{{!< default}}
+{{#post}}
+<div class="container">
+    <article class="post card {{post_class}}">
+        <section class="card-block">
+            <a class="btn btn-primary" href="javascript:window.history.go(-1)"><span aria-hidden="true">&larr;</span> Voltar</a>
+        </section>
+
+        <section class="card-block">
+            <h3 class="card-title"><a href="{{url}}">{{{title}}}</a></h3>
+            <small class="text-muted">
+                <time class="post-date" datetime="{{date format='DD/MM/YYYY'}}">{{date format='DD/MM/YYYY'}}</time>
+            </small>
+        </section>
+
+        {{#if tags}}
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    {{#foreach tags}}
+                        <a href="/tag/{{slug}}" class="badge badge-primary">{{name}}</a>
+                    {{/foreach}}
+                </li>
+            </ul>
+        {{/if}}
+
+        <section class="card-block">
+            {{content}}
+        </section>
+
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <h4>Gostou? Compartilhe:</h4>
+                <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
+                   onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="fa fa-twitter share"></span>
+                </a>
+                &nbsp;
+                <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                   onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="fa fa-facebook share"></span>
+                </a>
+                &nbsp;
+                <a href="https://plus.google.com/share?url={{url absolute="true"}}"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="fa fa-google-plus share"></span>
+                </a>
+            </li>
+        </ul>
+
+        <section class="card-footer">
+            <div class="disqus">
+                <div id="disqus_thread"></div>
+            </div>
+        </section>
+
+        <section class="card-block">
+            <a class="btn btn-primary" href="javascript:window.history.go(-1)"><span aria-hidden="true">&larr;</span> Voltar</a>
+            <a class="btn btn-primary pull-right" href="" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" title="Início"><span class="fa fa-chevron-up"></span></a>
+        </section>
+    </article>
+</div>
+{{/post}}

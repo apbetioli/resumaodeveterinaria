@@ -1,0 +1,62 @@
+{{!< default}}
+<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <div class="jumbotron text-center index-title">
+        <div class="jumbotron-spacer hidden-xs-down"></div>
+        <div class="container">
+            <h1 class="jumbotron-heading">{{@blog.title}}</h1>
+            <h3>{{@blog.description}}</h3>
+            <span class="fa fa-pencil"></span> {{plural pagination.total empty='Nenhum post' singular='% post' plural='% posts'}}
+            <a href="{{url}}rss/" title="Inscrever-se a este RSS"><span class="fa fa-rss fa-white"></span></a>
+        </div>
+        <div class="jumbotron-spacer hidden-xs-down"></div>
+    </div>
+</header>
+
+<div class="cards container-fluid">
+    <div class="card-columns">
+        <!-- Propaganda INICIO -->
+        <article class="card">
+            <div class="card-block" style="height: 400px; max-width: 400px; margin: auto; min-width: 300px;">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-4595122781337194"
+                    data-ad-slot="6284464264"
+                    data-ad-format="auto"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </article>
+        <!-- Propaganda FIM -->
+
+        {{#foreach posts}}
+            <article class="card">
+                {{#if image}}
+                    <a href="{{url}}">
+                    <img class="card-img-top img-fluid" src="{{image}}" alt="{{title}}"/>
+                    </a>
+                {{/if}}
+
+                <div class="card-block">
+                    <h3 class="card-title"><a href="{{url}}">{{{title}}}</a></h3>
+                    <small class="text-muted"><time class="post-date" datetime="{{date format='DD/MM/YYYY'}}">{{date format='DD/MM/YYYY'}}</time></small>
+                </div>
+
+                {{#if tags}}
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            {{#foreach tags}}
+                                <a href="/tag/{{slug}}" class="badge badge-primary">{{name}}</a>
+                            {{/foreach}}
+                        </li>
+                    </ul>
+                {{/if}}
+            </article>
+        {{/foreach}}
+    </div>
+
+    {{pagination}}
+
+</div>
+

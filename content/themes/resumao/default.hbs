@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{meta_description}}"/>
+    <link rel="icon" href="favicon.ico">
+
+    <title>{{meta_title}}</title>
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    <link rel="stylesheet" type="text/css" href="{{asset "components/font-awesome/css/font-awesome.min.css"}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{asset "css/resumao.css"}}">
+
+
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+<header>
+    {{navigation}}
+</header>
+
+{{{body}}}
+
+{{ghost_foot}}
+
+<script src="{{asset "components/jquery/dist/jquery.min.js"}}"></script>
+<script src="{{asset "components/tether/dist/js/tether.min.js"}}"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="{{asset "js/tags.js"}}"></script>
+<script src="{{asset "js/resumao.js"}}"></script>
+</body>
+</html>

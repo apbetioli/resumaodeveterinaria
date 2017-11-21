@@ -1,0 +1,46 @@
+.blog-header {
+  background-color: #f3d42c;
+}
+a {
+  color: #f3d42c;
+}
+a:hover,
+.nav-top a:hover {
+  color: #dfbe0d;
+}
+blockquote {
+  border-left: 5px solid #f3d42c;
+}
+.btn-dark {
+  background-color: rgba(243, 212, 44, 0.5);
+}
+.btn-dark:hover {
+  background-color: rgba(243, 212, 44, 0.9);
+}
+.post-cover a {
+  color: #f6de5c;
+  border: #f6de5c solid 2px;
+}
+.post-cover a:hover {
+  color: #f3d42c;
+  border-color: #f3d42c;
+}
+.post-featured {
+  background-color: #f3d42c;
+}
+.post-featured:after {
+  border-color: transparent #f3d42c transparent transparent;
+}
+.post-featured:before {
+  border-color: transparent transparent transparent #f3d42c;
+}
+.author h4 a:hover,
+.author h4 a:focus {
+  color: #f3d42c;
+}
+.page-tag {
+  color: #f3d42c;
+}
+.blog-footer a:hover {
+  color: #f6de5c;
+}

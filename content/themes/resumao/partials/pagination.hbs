@@ -1,0 +1,29 @@
+<div class="row hidden-xs-down">
+    <div class="col-sm-4 text-sm-left">
+        {{#if prev}}
+            <a class="btn btn-primary" href="{{page_url prev}}"><span aria-hidden="true">&larr;</span> Posts novos</a>
+        {{/if}}
+    </div>
+    <div class="col-sm-4 text-sm-center">
+        <span class="page-number">Página {{page}} de {{pages}}</span>
+    </div>
+    <div class="col-sm-4 text-sm-right">
+        {{#if next}}
+            <a class="btn btn-primary" href="{{page_url next}}">Posts antigos <span aria-hidden="true">&rarr;</span></a>
+        {{/if}}
+    </div>
+</div>
+
+<div class="row hidden-sm-up">
+    <div class="col-xs-12 text-center">
+        <span class="page-number">Página {{page}} de {{pages}}</span>
+    </div>
+    <div class="col-xs-12 text-center">
+        {{#if prev}}
+            <a class="btn btn-primary" href="{{page_url prev}}"><span aria-hidden="true">&larr;</span> Posts novos</a>
+        {{/if}}
+        {{#if next}}
+            <a class="btn btn-primary" href="{{page_url next}}">Posts antigos <span aria-hidden="true">&rarr;</span></a>
+        {{/if}}
+    </div>
+</div>

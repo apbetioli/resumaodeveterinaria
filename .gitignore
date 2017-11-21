@@ -1,0 +1,5 @@
+content/data
+content/images
+.idea
+*~
+node_modules

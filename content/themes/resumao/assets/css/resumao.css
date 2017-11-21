@@ -1,0 +1,228 @@
+a,
+a:hover,
+a:focus {
+    color: #009688;
+}
+
+a.btn:hover {
+    color: white;
+}
+
+.avatar {
+    position: relative;
+    float: left;
+    margin-right: 14px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+}
+
+.avatar-page {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+html {
+    background-color: #009688;
+}
+
+body {
+    background-color: #00976D;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    color: #fff;
+    background-color: #009688;
+    border-color: #009688;
+}
+
+.cards {
+    background: rgba(0, 0, 0, 0.6);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.card {
+    border: none;
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+.card-text {}
+
+.card-title {
+    text-align: center;
+}
+
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
+    width: 100%;
+}
+
+.container {
+    background: white;
+}
+
+.fa-white {
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+.jumbotron {
+    color: white;
+    background: transparent;
+    margin-bottom: 0;
+}
+
+.jumbotron>.container {
+    background: transparent;
+}
+
+.jumbotron-heading {
+    font-weight: 600;
+}
+
+.jumbotron-spacer {
+    padding-top: 13rem;
+}
+
+.badge {
+    padding: .5em .5em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.badge-primary {
+    color: white;
+    background-color: #009688;
+}
+
+.materias {
+    padding: 10px;
+}
+
+.navbar-dark {
+    background: rgba(0, 0, 0, 0.95);
+    border-radius: 0px;
+    border: none;
+    min-height: 40px;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+.nav-item>a {
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-link {
+    padding-left: 1rem;
+}
+
+.page-number {
+    color: white;
+}
+
+.post-author>a {
+    color: white;
+    text-decoration: underline;
+}
+
+.share {
+    font-size: 2em;
+}
+
+.main-header {
+    background-size: cover;
+}
+
+
+/* Google search */
+
+.gsib_a {
+    padding: 0 !important;
+}
+
+.cse .gsc-control-cse,
+.gsc-control-cse {
+    padding-top: 4px !important;
+    padding-bottom: 0 !important;
+}
+
+.search {
+    max-width: 400px;
+    width: 100%;
+}
+
+.cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
+    width: auto !important;
+    height: 24px !important;
+    margin-top: 3px !important;
+}

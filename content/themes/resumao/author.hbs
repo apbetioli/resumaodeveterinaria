@@ -1,0 +1,46 @@
+{{!< default}}
+<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <div class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">{{@blog.title}}</h1>
+            <h3>{{#if author.image}}<img class="avatar-page" src="{{author.image}}" alt="{{author.name}}" nopin="nopin">{{/if}} {{author.name}}</h3>
+            <p>{{author.bio}}</p>
+            <span class="fa fa-pencil"></span> {{plural pagination.total empty='Nenhum post' singular='% post' plural='% posts'}}
+            <a href="{{url}}rss/" title="Inscrever-se ao meu RSS"><span class="fa fa-rss fa-white"></span></a>
+        </div>
+    </div>
+</header>
+
+<div class="cards container-fluid">
+    <div class="card-columns">
+        {{#foreach posts}}
+            <article class="card">
+                {{#if image}}
+                    <a href="{{url}}">
+                    <img class="card-img-top img-fluid" src="{{image}}" alt="{{title}}"/>
+                    </a>
+                {{/if}}
+
+                <div class="card-block">
+                    <h3 class="card-title"><a href="{{url}}">{{{title}}}</a></h3>
+                    <small class="text-muted">{{#if author.image}}<img class="avatar" src="{{author.image}}" alt="{{author.name}}" nopin="nopin">{{/if}}Por {{author}} em <time class="post-date" datetime="{{date format='DD/MM/YYYY'}}">{{date format='DD/MM/YYYY'}}</time></small>
+
+                </div>
+
+                {{#if tags}}
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            {{#foreach tags}}
+                                <a href="/tag/{{slug}}" class="badge badge-primary">{{name}}</a>
+                            {{/foreach}}
+                        </li>
+                    </ul>
+                {{/if}}
+            </article>
+        {{/foreach}}
+    </div>
+
+    {{pagination}}
+
+</div>
+

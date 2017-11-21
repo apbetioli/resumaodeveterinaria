@@ -1,0 +1,33 @@
+{
+    "name": "Resumão de veterinária",
+    "version": "0.0.1",
+    "authors": [
+        "apbetioli <apbetioli@gmail.com>"
+    ],
+    "description": "Blog Resumão de veterinária",
+    "main": "index.html",
+    "moduleType": [],
+    "keywords": [
+        "resumão",
+        "veterinária",
+        "medicina",
+        "veterinária"
+    ],
+    "license": "MIT",
+    "homepage": "http://www.resumaodeveterinaria.com.br",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "components",
+        "test",
+        "tests",
+        "package.json",
+        "src"
+    ],
+    "dependencies": {
+        "jquery": "^2.2.1",
+        "tether": "^1.2.0",
+        "font-awesome": "fontawesome#^4.5.0"
+    }
+}

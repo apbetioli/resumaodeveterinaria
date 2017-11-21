@@ -1,0 +1,62 @@
+{{!< default}}
+<section class="posts">
+    <div class="container">
+
+		<div class="col-lg-12">
+
+            <div class="js-posts">
+	          {{! Each post will be output using this markup }}
+	          {{#foreach posts columns=3}}
+				  {{#if @rowStart}}
+				  <div class="row">
+				  {{/if}}
+
+                  <div class="js-post col-sm-12 col-md-6 col-lg-4">
+                      <article class="{{post_class}}">
+                          <div class="post-featured" title="Em destaque"></div>
+                          <div class="hide post-cover" data-url="{{@blog.url}}{{url}}" data-post="{{id}}">
+                              {{#if image}}
+                                  <img src="{{image}}" alt="{{title}}"/>
+                              {{else}}
+                                  {{content words="0"}}
+                              {{/if}}
+                          </div>
+                          <header class="post-header">
+                              <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                              <div class="post-meta">
+                                  <span class="fa fa-calendar"></span> <time datetime="{{date format='DD/MM/YYYY'}}" class="post-day-month">{{date format="DD MMM YYYY"}}</time>
+                              </div>
+                          </header>
+                          <div class="post-excerpt">
+                                  {{excerpt}}&hellip;
+                          </div>
+                          <div class="post-more">
+                              <a class="read-more" href="{{url}}">Continuar Lendo <span class="fa fa-arrow-right"></span></a>
+                          </div>
+                          <div class="post-footer">
+                              <div class="post-tags">
+                                  {{tags separator=", "}}&nbsp;
+                              </div>
+                          </div>
+                      </article>
+                  </div>
+
+				  {{#if @rowEnd}}
+				  </div>
+				  {{/if}}
+
+	          {{/foreach}}
+	        </div>
+
+		</div>
+
+    </div>
+</section>
+<section class="posts-pagination">
+    <div class="container">
+        <div class="col-lg-8 col-lg-push-2">
+          {{!! After all the posts, we have the previous/next pagination links }}
+          {{pagination}}
+        </div>
+    </div>
+</section>

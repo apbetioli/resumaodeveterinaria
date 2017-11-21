@@ -1,0 +1,57 @@
+<div id="materias-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="materias-modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="hidden-sm-up pull-right btn btn-primary" data-dismiss="modal" aria-label="Close">Fechar</button>
+                <h4 class="modal-title" id="myModalLabel">Matérias</h4>
+            </div>
+            <div class="modal-body">
+                <div id="tags" class="materias card-columns"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-toggleable-sm navbar-fixed-top navbar-dark bg-inverse">
+
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#colnav">
+        &#9776;
+    </button>
+
+    <div class="collapse navbar-collapse" id="colnav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="/"><span class="fa fa-home"></span></a></li>
+             {{#foreach navigation}}
+               <li class="nav-item"><a class="nav-link" href="{{url absolute="true"}}">{{label}}</a></li>
+             {{/foreach}}
+             <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#materias-modal" href="">Matérias</a></li>
+        </ul>
+
+        <ul class="navbar-nav navbar-right">
+            <li class="nav-item search">
+                <script>
+                (function() {
+                    var cx = '016496746419723842743:enga4wrt94a';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                })();
+                </script>
+                <gcse:search></gcse:search>
+            </li>
+            <li class="nav-item">
+                <li class="nav-item"><a class="nav-link" href="/ghost"><span class="fa fa-user"></span> Entrar</a></li>
+            </li>
+        </ul>
+
+    </div>
+
+
+</nav>
+
