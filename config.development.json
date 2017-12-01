@@ -1,14 +1,10 @@
 {
   "database": {
-    "client": "mysql",
+    "client": "sqlite3",
     "connection": {
-      "host": "localhost",
-      "port": 3306,
-      "user": "resumao",
-      "password": "resumao",
-      "database": "resumao",
-      "charset": "utf8"
-    }
+      "filename": "content/data/ghost-dev.db"
+    },
+    "debug": false
   },
   "paths": {
     "contentPath": "content"
