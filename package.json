@@ -1,0 +1,30 @@
+{
+  "name": "resumaodeveterinaria",
+  "version": "1.0.0",
+  "description": "Blog Resumão de Veterinária",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/apbetioli/resumaodeveterinaria.git"
+  },
+  "keywords": [
+    "resumão",
+    "veterinária",
+    "vet",
+    "pet",
+    "gato",
+    "cachorro"
+  ],
+  "author": "Mariana Rodrigues Ubialli Betioli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apbetioli/resumaodeveterinaria/issues"
+  },
+  "homepage": "https://github.com/apbetioli/resumaodeveterinaria#readme",
+  "dependencies": {
+    "ghost": "^1.18.2"
+  }
+}
