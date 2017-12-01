@@ -1,12 +1,16 @@
 {
   "database": {
-    "client": "sqlite3",
+    "client": "mysql",
     "connection": {
-      "filename": "content/data/ghost-dev.db"
-    },
-    "debug": false
+      "host": "localhost",
+      "port": 3306,
+      "user": "resumao",
+      "password": "resumao",
+      "database": "resumao",
+      "charset": "utf8"
+    }
   },
   "paths": {
-    "contentPath": "/home/betioli/BETIOLI/novoresumao/content"
+    "contentPath": "content"
   }
 }
