@@ -4,7 +4,7 @@
   "description": "Blog Resumão de Veterinária",
   "main": "index.js",
   "engines": {
-    "node": ">=6.9 <7.*"
+    "node": "^4.5.0 || ^6.9.0 || ^8.9.0"
   },
   "scripts": {
     "start": "node index.js",
@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/apbetioli/resumaodeveterinaria#readme",
   "dependencies": {
-    "ghost": "^1.18.2"
+    "ghost": "^1.22.3",
+    "knex-migrator": "^3.1.5"
   }
 }
